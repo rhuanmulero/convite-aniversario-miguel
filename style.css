@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #add8e6; /* Azul claro */
+}
+
+#logo {
+  max-width: 250px; /* Tamanho máximo da imagem */
+  display: block;
+  margin: 0 auto; /* Centralizar horizontalmente */
+  margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.invitation {
+  text-align: center;
+  margin-top: 100px;
+}
+
+canvas {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  z-index: -1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0; /* Começa com opacidade 0 */
+  transition: opacity 0.3s ease; /* Adiciona transição suave de opacidade */
+}
+
+.modal.show {
+  opacity: 1; /* Ao adicionar a classe "show", a opacidade se torna 1 */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  text-align: center; /* Centralizar conteúdo */
+  opacity: 0; /* Começa com opacidade 0 */
+  transform: scale(0.8); /* Começa com escala 0.8 */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Adiciona transição suave de opacidade e escala */
+}
+
+.modal-content.show {
+  opacity: 1; 
+  transform: scale(1); 
+}
+
+.message-yellow {
+  background-color: #f1e207; 
+  color: #fff; 
+}
+
+.message-green {
+  background-color: #2ECC40; 
+  color: #000; 
+}
+
+.message-red {
+  background-color: #d10d03; 
+  color: #fff; 
+}
+
+.message-orange {
+  background-color: #ff7b00; 
+  color: #fff; 
+}
+
+.message-brown {
+  background-color: #442203; 
+  color: #fff; 
+}
+
+.message-pink {
+  background-color: #dd6fbc; 
+  color: #fff; 
+}
+
+.message-super {
+  background-color: #6fcddd; 
+  color: #fff; 
+}
+
+.message-white {
+  background-color: #000000; 
+  color: #fff; 
+}
+
+.message-purple {
+  background-color: #5a0553; 
+  color: #fff; 
+}
+
+.message-blue {
+  background-color: #05065a; 
+  color: #fff; 
+}
+
+p {
+
+font-family: Josefin Sans;
+margin-top: 20px;
+
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modal-image {
+  max-width: 80%; /* Tamanho máximo da imagem */
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-container button {
+  margin: 10px;
+  padding: 10px 30px; 
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #0074D9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 100%; /* Garante que todos os botões tenham a mesma largura */
+  max-width: 200px; /* Define a largura máxima dos botões */
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+
+.modalbutton {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content2 {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+
+.fechar {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.fechar:hover,
+.fechar:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+@media screen and (min-height: 660px) {
+  canvas {
+    bottom: 0px;
+  }
+}
+
+@media screen and (min-height: 840px) {
+  canvas {
+    bottom: 80px;
+  }
+}
+
+@media screen and (min-height: 880px) {
+  canvas {
+    bottom: 130px;
+  }
+}
+
+@media screen and (min-height: 1020px) {
+  canvas {
+    bottom: 250px;
+  }
+}
+
+@media screen and (min-height: 1150px) {
+  canvas {
+    bottom: 420px;
+  }
+}
+
+@media screen and (min-height: 1350px) {
+  canvas {
+    bottom: 600px;
+  }
+
+}
+
+/* Estilos para dispositivos desktop */
+@media screen and (min-width: 1000px) {
+  .modal-content {
+    width: 30%; /* Reduz o tamanho do modal para 40% da largura da tela */
+  }
+}

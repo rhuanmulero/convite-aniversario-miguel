@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aniversário One Piece</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Josefin+Sans&family=Noto+Sans+JP:wght@600&family=Protest+Strike&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <div class="invitation">
+    <img src="logo-miguel.png" id="logo">
+    <p>Você está convidado para comemorar <br> o aniversário de Miguel D. Luffy!</p>
+    <img src="" alt="">
+  </div>
+
+  <div class="button-container">
+    <button id="data-local-button">Data e Local</button>
+    <button id="sugestao-presentes-button">Sugestão de Presentes</button>
+    <a href="https://api.whatsapp.com/send?phone=5513974079776&text=Ol%C3%A1!%0AGostaria%20de%20Confirmar%20a%20Presen%C3%A7a%20no%20Anivers%C3%A1rio%20do%20Miguel%20Oliveira"><button id="confirmar-presenca-button">Confirme sua Presença</button></a>
+  </div>
+
+  <canvas id="waves"></canvas>
+  <script src="script.js"></script>
+
+
+
+<!-- Modal para Data e Local -->
+<div id="modal-data-local" class="modalbutton">
+    <div class="modal-content2">
+      <span class="fechar">&times;</span>
+      <!-- Conteúdo do modal -->
+      <h2>Data e Local</h2>
+      <p>DATA: 30/03/2024 das 12h às 16h</p>
+      <p>LOCAL: Parks & Games - Salão 01 - Litoral Plaza Shopping/Pg</p>
+        <a href="https://maps.app.goo.gl/oKzDxxzYXfKK5C5bA"> <button class="button-container">Avenida Ayrton Senna Da Silva 1511</button></a>
+
+
+      
+    </div>
+  </div>
+  
+  <!-- Modal para Sugestão de Presentes -->
+  <div id="modal-sugestao-presentes" class="modalbutton">
+    <div class="modal-content2">
+      <span class="fechar">&times;</span>
+      <!-- Conteúdo do modal -->
+      <h2>Sugestão de Presentes</h2>
+      <p>Roupas Tamanho 16</p>
+      <p>Calçados Nº35</p>
+      <p>Bonecos de One Piece ou outros Animes</p>
+      <p>Gift Card do Brawl Stars</p>
+    </div>
+  </div>
+
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modal-message">Mensagem padrão</p>
+      <img id="modal-image" src="" alt="Imagem da mensagem">
+    </div>
+  </div>
+
+</body>
+</html>
